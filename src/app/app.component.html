@@ -1,0 +1,20 @@
+
+
+<div class="center">
+	<h1 class="title-text">Convert your black and white images to color images</h1>
+  </div>
+<div style="text-align:center">
+	<div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+	<div><img [src]="url" height="300" *ngIf="url"></div>
+  <p *ngIf="url">{{url}}</p>
+	<p>
+		<input type="file" (change)="selectFile($event)">
+	</p>
+	
+  <button *ngIf="download_url" type="submit" (click)="getData()" >Upload Image</button>
+  <div>
+	<img [src]="result_url" *ngIf="result_url" width="400">
+  </div>
+</div>
+
+<router-outlet></router-outlet>

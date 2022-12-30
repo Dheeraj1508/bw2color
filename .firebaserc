@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "web-image-1dcbd": {
+      "hosting": {
+        "image_app": [
+          "web-image-1dcbd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "web-image-1dcbd"
+  }
+}
